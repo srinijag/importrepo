@@ -1,7 +1,7 @@
-view: customer_order_facts {
-    derived_table: {
+view: customer_order_facts_datagroup {
+  derived_table: {
       publish_as_db_view: yes
-      sql_trigger_value: SELECT EXTRACT(HOUR FROM CURRENT_TIMESTAMP());;
+      datagroup_trigger: stable_view_test
       sql:
       SELECT
         user_id,

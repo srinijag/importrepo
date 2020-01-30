@@ -8,6 +8,14 @@ datagroup: bq_stableview_test_default_datagroup {
   max_cache_age: "1 hour"
 }
 
+datagroup: stable_view_test {
+  label: "Testing for Stable View #278961"
+  max_cache_age: "24 hours"
+  sql_trigger: SELECT EXTRACT(HOUR FROM CURRENT_TIMESTAMP());;
+}
+
+
+
 persist_with: bq_stableview_test_default_datagroup
 
 explore: customer_order_facts {}
