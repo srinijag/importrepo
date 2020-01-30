@@ -20,6 +20,8 @@ persist_with: bq_stableview_test_default_datagroup
 
 explore: customer_order_facts {}
 
+explore: customer_order_facts_datagroup {}
+
 explore: all_types {}
 
 explore: connection_reg_r3 {}
