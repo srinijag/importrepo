@@ -22,6 +22,11 @@ view: orders {
     sql: ${TABLE}.created_at ;;
   }
 
+  dimension: createed2 {
+    type: date
+    sql: ${TABLE}.created_at ;;
+  }
+
   dimension: order_amount {
     type: number
     sql: ${TABLE}.order_amount ;;

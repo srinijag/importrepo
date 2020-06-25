@@ -1,4 +1,4 @@
-connection: "bigquery_test_db_connection"
+connection: "faa_redshift"
 
 # include all the views
 include: "/views/**/*.view"

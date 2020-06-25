@@ -7,7 +7,8 @@ project_name: "bq_stableview_test"
 #   project: "name_of_other_project"
 # }
 
-constant: srinija_test {
-  value: "users"
-  export: override_optional
-}
+
+  constant: srinija_test {
+    value: "orders"
+    export: override_optional
+  }
