@@ -1,5 +1,5 @@
 view: users {
-  sql_table_name: looker_test.users ;;
+  sql_table_name: looker_test.@{srinija_test} ;;
   drill_fields: [id]
 
   dimension: id {
