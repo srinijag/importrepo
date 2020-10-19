@@ -6,11 +6,11 @@ view: ndt_flights {
       column: destination {}
       column: distance {}
       column: diverted {}
+      derived_column: rank { sql: RANK() OVER (partition by flights ORDER BY distance desc) ;;}
     }
   }
   dimension: destination {}
-  dimension: distance {
-    type: number
-  }
+  dimension: rank { type: string}
+  dimension: distance { type: number}
   dimension: diverted {}
 }

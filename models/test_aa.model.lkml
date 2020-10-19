@@ -28,7 +28,8 @@ explore: +flights {
         destination,
         distance,
         diverted,
-        ndt_flights.destination
+        ndt_flights.destination,
+        ndt_flights.rank
       ]
       filters: []
     }
