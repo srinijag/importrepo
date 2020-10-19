@@ -27,7 +27,8 @@ explore: +flights {
       dimensions: [
         destination,
         distance,
-        diverted
+        diverted,
+        ndt_flights.destination
       ]
       filters: []
     }
