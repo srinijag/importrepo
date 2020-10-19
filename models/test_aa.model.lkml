@@ -16,7 +16,10 @@ explore: flights {
       field: flights.destination
       user_attribute: test_aa
     }
-    join: ndt_flights {}
+    join: ndt_flights {
+      sql_on: ${flights.id2} = ${ndt_flights.id2} ;;
+      relationship: one_to_one
+    }
   }
 
 
